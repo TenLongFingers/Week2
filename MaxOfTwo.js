@@ -5,5 +5,7 @@ let y = 2
 
 if (x>y) {
     console.log(x)
-    else (console.log(y))
+}
+if (y>x) {
+    console.log(y)
 }
