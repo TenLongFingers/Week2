@@ -59,21 +59,16 @@ const tempArr=[`t-shirt `,`jacket `]
 const rainArr=[`rain-`,`and take an umbrella`]
 let advice = `You should wear a `
 
-if(temperature >= 80 && rain === true){
-console.log(advice + tempArr[0] + rainArr[1])
+if(temperature >= 80 && rain === false){
+console.log(advice + tempArr[0])
 }
-else console.log(advice + tempArr[0])
-
-
-if(temperature < 80 && temperature > 60 && rain === true){
-  console.log(advice + rainArr[0] + tempArr[1])
-  }
-else console.log(advice + tempArr[1])
-
-if(temperature <= 60 && rain === true){
-  console.log(advice + tempArr[1] + rainArr[1])
+else if (temperature < 80 && temperature > 60 && rain === false){
+  console.log(advice + tempArr[1])
 }
-else console.log(advice + tempArr[1])
+else if(temperature <= 60 && rain === false){
+  console.log(advice + tempArr[1])
+}
+
 ////////// PROBLEM 5 //////////
 
 /*
