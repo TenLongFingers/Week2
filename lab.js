@@ -77,7 +77,7 @@ if(temperature <= 60 && rain === false) {
 else if(temperature <= 60 && rain === true) {
   console.log(advice + tempArr[1]+ rainArr[1])
 }
-//I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. But I'm running out of time and will have to look into that later.//
+//I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. And maybe a while loop for the temperature range, instead of writing it out each time. But I'm running out of time and will have to look into that later.//
 
 ////////// PROBLEM 5 //////////
 
@@ -85,7 +85,9 @@ else if(temperature <= 60 && rain === true) {
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
+for (let i=1; i <= 10; i++) {
+  console.log(i)
+}
 
 ////////// PROBLEM 6 //////////
 
