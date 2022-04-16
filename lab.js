@@ -59,26 +59,26 @@ const tempArr=[`t-shirt `,`jacket `]
 const rainArr=[`rain-`,`and take an umbrella`]
 let advice = `You should wear a `
 
-if(temperature >= 80 && rain === false) {
+if(temperature >= 80 && !rain) {
   console.log(advice + tempArr[0])
 }
-else if(temperature >= 80 && rain === true) {
+else if(temperature >= 80 && rain) {
   console.log(advice + tempArr[0] + rainArr[1])
 }
-if(temperature < 80 && temperature > 60 && rain === false) {
+if(temperature > 60 && !rain) {
   console.log(advice + tempArr[1])
 }
-else if(temperature < 80 && temperature > 60 && rain === true) {
+else if(temperature > 60 && rain) {
   console.log(advice + rainArr[0] + tempArr[1])
 }
-if(temperature <= 60 && rain === false) {
+if(temperature <= 60 && !rain) {
   console.log(advice + tempArr[1])
 }
-else if(temperature <= 60 && rain === true) {
+else if(temperature <= 60 && rain) {
   console.log(advice + tempArr[1]+ rainArr[1])
 }
 //I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. And maybe a while loop for the temperature range, instead of writing it out each time. But I spent a long time on this, so I'm running out of time and will have to look into that later.//
-
+//It's probably more expected to have a new string for each condition, but I can ask a professional how much of a headache my solution is. For now, it works, so I'll just clean it up using what I learned from the solution.
 ////////// PROBLEM 5 //////////
 
 /*
