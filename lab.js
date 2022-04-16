@@ -154,5 +154,8 @@ console.log(!changeMyMind)
 // If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 for(let z = 5; z > 0; z--){
+  for(let z = 5; z > 0; z--){
+    console.log(z)
+  }
   console.log(z)
-}
+} 
