@@ -46,7 +46,12 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-//Code Here
+for(i = 1; i <= nums.length; i++){
+  if(nums[i] % 2 === 0){
+    evensArr.push(`even`)
+  }
+}
+console.log(evensArr)
 
 
 
