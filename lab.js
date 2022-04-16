@@ -105,8 +105,9 @@ for (let i=1; i <= 10; i++) {
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
-
+for (let ten=10; ten >= 0; ten--) {
+  console.log(ten)
+}
 
 ////////// PROBLEM 8 //////////
 
