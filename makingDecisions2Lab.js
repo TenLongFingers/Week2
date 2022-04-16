@@ -91,7 +91,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 let someNum = myFavoriteNumbers[4]
-console.log(someNum)
+console.log(someNum);
 
 
 ////////// PROBLEM 7 //////////
@@ -99,7 +99,9 @@ console.log(someNum)
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
-//Code Here
+if (myFavoriteNumbers.length-1 < 7){
+  console.log('There are not enough elements in this array')
+} else someNum = myFavoriteNumbers[6];
 
 
 ////////// PROBLEM 8 //////////
