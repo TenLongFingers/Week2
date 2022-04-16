@@ -48,8 +48,8 @@ else console.log(`Amy and Brittani were not born in the same year.`)
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55;
-let rain = true;
+let temperature = 50;
+let rain = true
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
@@ -59,15 +59,25 @@ const tempArr=[`t-shirt `,`jacket `]
 const rainArr=[`rain-`,`and take an umbrella`]
 let advice = `You should wear a `
 
-if(temperature >= 80 && rain === false){
-console.log(advice + tempArr[0])
+if(temperature >= 80 && rain === false) {
+  console.log(advice + tempArr[0])
 }
-else if (temperature < 80 && temperature > 60 && rain === false){
+else if(temperature >= 80 && rain === true) {
+  console.log(advice + tempArr[0] + rainArr[1])
+}
+if(temperature < 80 && temperature > 60 && rain === false) {
   console.log(advice + tempArr[1])
 }
-else if(temperature <= 60 && rain === false){
+else if(temperature < 80 && temperature > 60 && rain === true) {
+  console.log(advice + rainArr[0] + tempArr[1])
+}
+if(temperature <= 60 && rain === false) {
   console.log(advice + tempArr[1])
 }
+else if(temperature <= 60 && rain === true) {
+  console.log(advice + tempArr[1]+ rainArr[1])
+}
+//I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. But I'm running out of time and will have to look into that later.//
 
 ////////// PROBLEM 5 //////////
 
