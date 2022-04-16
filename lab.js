@@ -77,7 +77,7 @@ if(temperature <= 60 && rain === false) {
 else if(temperature <= 60 && rain === true) {
   console.log(advice + tempArr[1]+ rainArr[1])
 }
-//I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. And maybe a while loop for the temperature range, instead of writing it out each time. But I'm running out of time and will have to look into that later.//
+//I feel like this could be done with booleans, since there are only two items in the arrays, and concatenate strings. And maybe a while loop for the temperature range, instead of writing it out each time. But I spent a long time on this, so I'm running out of time and will have to look into that later.//
 
 ////////// PROBLEM 5 //////////
 
@@ -134,6 +134,11 @@ while (score < passingScore){
 
 let changeMyMind = true
 
+if(changeMyMind){
+  changeMyMind = false
+} else {changeMyMind = true
+}
+console.log(changeMyMind)
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
